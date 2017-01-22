@@ -16,9 +16,10 @@ while True:
         brightness =+ 20 
         pi1.set_PWM_dutycycle(13, brightness)
         time.sleep(0.05)
-        
+    
     for n in range(10):
         brightness =- 20 
+        print brightness
         pi1.set_PWM_dutycycle(13, brightness)
         time.sleep(0.05)
         

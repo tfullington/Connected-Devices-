@@ -11,7 +11,7 @@ while True:
     time.sleep(1)
     
     #Ramps brightness from 0 to 200 and back over 1 second + time to execute
-    brightness = 0
+    brightness = 20
     for n in range(10):
         brightness =+ 20 
         pi1.set_PWM_dutycycle(13, brightness)

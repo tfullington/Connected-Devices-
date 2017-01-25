@@ -1,0 +1,24 @@
+- name: create directory
+  become: true 
+  file: path={{ pigpio_tmp_dir }} state=directory
+
+- name: extract files from archive
+  become: true 
+  unarchive: src={{ pigpio_archive }} dest={{ pigpio_tmp_dir }}
+
+- name: make pigpio
+  become: true 
+  make: chdir={{ pigpio_tmp_dir }}/PIGPIO
+
+- name: install pigpio
+  become: true 
+  make: chdir={{ pigpio_tmp_dir }}/PIGPIO target=install
+
+- name: create cron entry to run daemon at reboot
+  become: true 
+  cron:
+    special_time: reboot
+    job: "{{ path_to_pigpiod }}"
+    user: root
+    cron_file: 1_pigpiod
+    name: "run pigpiod on reboot"

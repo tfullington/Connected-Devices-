@@ -1,0 +1,15 @@
+- include: 01_apt_cache_update.yml
+- include: 01_git.yml
+- include: 01_enable_ssh.yml
+
+- name: see if pigpiod already installed
+  stat: path={{ path_to_pigpiod }}
+  register: pigpiod_binary
+
+- include: 01_pigpio.yml
+  when: not pigpiod_binary.stat.exists
+
+- include: 01_rpi3_uart.yml
+- include: 01_wifi_pwrmngmt.yml
+
+

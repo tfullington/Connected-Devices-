@@ -1,0 +1,3 @@
+---
+# tasks file for lampi
+- include: 01.yml

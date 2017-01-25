@@ -41,5 +41,7 @@ You can see the course [Syllabus](syllabus.md).
 
 [01.7 Assignment](Courseware/01.7_Assignment/README.md)
 
+[01.8 Introduction to Ansible](Courseware/01.8_Ansible_Introduction/README.md)
+
 
 &copy; 2015-17 LeanDog, Inc. and Nick Barendt

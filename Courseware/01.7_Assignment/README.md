@@ -94,4 +94,6 @@ Before the start of class next week, one member of each pair should send an emai
 Other documentation:
 * [https://wiki.python.org/moin/ForLoop](https://wiki.python.org/moin/ForLoop)
 
+Next up: go to [Introduction to Ansible](../01.8_Ansible_Introduction/README.md)
+
 &copy; 2015-17 LeanDog, Inc. and Nick Barendt

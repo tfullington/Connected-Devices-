@@ -1,0 +1,2 @@
+# Ansible error retry file
+*.retry

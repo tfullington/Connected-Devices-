@@ -25,7 +25,7 @@ Any/all of these compatibility notes should be considered temporary - a future v
 You can see the course [Syllabus](syllabus.md).
 
 
-# [Chapter 1: Build a Raspberry Pi Controlled Desk Lamp](Courseware/01.1_Burning_an_SD_Card_Image/README.md)
+## [Chapter 1: Build a Raspberry Pi Controlled Desk Lamp](Courseware/01.1_Burning_an_SD_Card_Image/README.md)
 
 [01.1 Instructions for Burning an SD Card](Courseware/01.1_Burning_an_SD_Card_Image/README.md)
 
@@ -43,5 +43,16 @@ You can see the course [Syllabus](syllabus.md).
 
 [01.8 Introduction to Ansible](Courseware/01.8_Ansible_Introduction/README.md)
 
+## [Chapter 2: Native Embedded App](Courseware/02.1_Development_in_a_Terminal/README.md)
+
+[02.1 Development in a Terminal](Courseware/02.1_Development_in_a_Terminal/README.md)
+
+[02.2 Set up PiTFT Screen](Courseware/02.2_Set_up_PiTFT_Screen/README.md)
+
+[02.3 Hello, Kivy](Courseware/02.3_Hello_Kivy/README.md)
+
+[02.4 Events and Binding](Courseware/02.4_Events_and_Binding/README.md)
+
+[02.5 Assignment](Courseware/02.5_Assignment/README.md)
 
 &copy; 2015-17 LeanDog, Inc. and Nick Barendt

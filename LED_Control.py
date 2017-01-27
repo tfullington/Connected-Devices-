@@ -8,7 +8,7 @@ while True:
     pi1.write(26,0)
     pi1.write(13,0)
     
-    time.sleep(1)
+    #time.sleep(1)
     
     #Ramps brightness from 0 to 200 and back over 1 second + time to execute
     brightness = 0

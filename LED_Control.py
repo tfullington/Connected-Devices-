@@ -15,44 +15,44 @@ while True:
     for n in range(100):
         brightness += 2.55 
         pi1.set_PWM_dutycycle(19, brightness)
-        time.sleep(0.01)
+        time.sleep(0.005)
     
     for n in range(100):
         brightness -= 2.55 
         print brightness
         pi1.set_PWM_dutycycle(19, brightness)
-        time.sleep(0.01)
+        time.sleep(0.005)
         
     for n in range(100):
         brightness += 2.55
         pi1.set_PWM_dutycycle(26, brightness)
-        time.sleep(0.01)
+        time.sleep(0.005)
     
     for n in range(100):
         brightness -= 2.55 
         pi1.set_PWM_dutycycle(26, brightness)
-        time.sleep(0.01)
+        time.sleep(0.005)
     
     for n in range(100):
         brightness += 2.55
         pi1.set_PWM_dutycycle(13, brightness)
-        time.sleep(0.01)
+        time.sleep(0.005)
     
     for n in range(100):
         brightness -= 2.55 
         pi1.set_PWM_dutycycle(13, brightness)
-        time.sleep(0.01)
+        time.sleep(0.005)
        
     for n in range(100):
         brightness += 2.55 
         pi1.set_PWM_dutycycle(13, brightness)
         pi1.set_PWM_dutycycle(26, brightness)
         pi1.set_PWM_dutycycle(19, brightness)
-        time.sleep(0.01)
+        time.sleep(0.005)
         
     for n in range(100):
         brightness -= 2.55 
         pi1.set_PWM_dutycycle(13, brightness)
         pi1.set_PWM_dutycycle(26, brightness)
         pi1.set_PWM_dutycycle(19, brightness)
-        time.sleep(0.01)
+        time.sleep(0.005)

@@ -1,0 +1,39 @@
+#:kivy 1.9
+#:include lampi/controls/color_box.kv
+#:include lampi/colors.kv
+#:include lampi/controls/gradient_slider.kv
+#:include lampi/controls/lampi_toggle.kv
+
+BoxLayout:
+  orientation: 'vertical'
+  canvas.before:
+    Color:
+      rgba: offwhite  
+
+  Slider:
+    size_hint_y: 0.1
+    opacity: 0.0
+
+  GradientSlider:
+    colors: red, green, blue, red
+    on_value: app._hue_slider(*args)
+
+  GradientSlider:
+    colors: white, app.current_sat
+    on_value: app._sat_slider(*args)
+
+  GradientSlider:
+    colors: black, white
+    thumb_image_light: 'images/brightness_icon_light_small.png'
+    thumb_image_dark: 'images/brightness_icon_dark_small.png'
+    on_value: app._bright_slider(*args)
+
+  ColorBox:
+    size_hint_y: 0.1
+    color: app.current[0], app.current[1], app.current[2], 1.0
+
+  LampiToggle:
+    image: 'images/power_icon_light.png'
+    accent_color: (1,0,0,1)
+    text: ''
+    
